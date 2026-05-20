@@ -1,6 +1,5 @@
 """
 Laboratorio: TDA Árbol M-Vías
-ESTÁNDAR: PEP 8 / P.O.O.
 """
 
 class NodoMVias:
@@ -8,7 +7,6 @@ class NodoMVias:
 
     def __init__(self, orden):
         self._orden = orden
-        # Un nodo M-vías tiene como máximo (M-1) datos y M hijos
         # Inicializamos las listas con valores nulos (None)
         self._datos = [None] * (orden - 1)
         self._hijos = [None] * orden
@@ -40,7 +38,6 @@ class NodoMVias:
     # ==========================================
     # GETTERS Y SETTERS ESPECÍFICOS (Por Índice)
     # ==========================================
-    # En árboles M-vías es fundamental acceder a posiciones específicas
     
     def get_dato(self, indice):
         """Retorna el dato en una posición específica."""
